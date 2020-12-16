@@ -46,6 +46,6 @@ class IdeasController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def idea_params
-      params.require(:idea).permit(:content, :category, :date)
+      params.require(:idea).permit(:title, :content, :category, :date)
     end
 end
